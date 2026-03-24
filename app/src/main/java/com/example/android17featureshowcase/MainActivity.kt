@@ -4,14 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.example.android17featureshowcase.components.AppNavigation
+import com.example.android17featureshowcase.feature.FeatureListScreen
 import com.example.android17featureshowcase.ui.theme.Android17FeatureShowcaseTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -20,9 +16,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Android17FeatureShowcaseTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                   // FeatureListScreen()
-                }
+                //FeatureListScreen(navController)
+                AppNavigation()
             }
         }
     }
