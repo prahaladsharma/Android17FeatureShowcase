@@ -83,10 +83,6 @@ Note: The project is named "Android17FeatureShowcase" and aims to demonstrate a 
 
 ---
 
-If you want, I can also add runtime permission helpers, sample unit tests, or CI Gradle tasks to this repository — tell me which next and I will implement them.
-
----
-
 ## Android 17 — theory, expected platform directions and how they affect these features
 
 Important: Android platform releases evolve rapidly. The section below summarizes the general design directions, platform priorities (privacy, security, power), and concrete migration/recommendation guidance for Contacts, Biometric, WorkManager and Adaptive UI. Where the OS introduces concrete new APIs you should consult the official Android 17 release notes and API reference for exact class and method names — the guidance below is intentionally descriptive and focused on how to adapt code and tests.
