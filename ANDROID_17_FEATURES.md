@@ -164,10 +164,3 @@ Where to look for the official, up-to-date details
 - Android Platform release notes and API reference: https://developer.android.com
 - Jetpack libraries (Biometric, WorkManager, WindowManager, Activity/Compose integration) release notes on the AndroidX pages and Maven artifacts.
 
-If you'd like, I can:
-- Add concrete code examples to the `feature/contact` and `feature/biometric` samples showing CryptoObject usage and permission rationale UI.
-- Add a small WorkManager test harness and a Compose-based observable progress indicator.
-- Enhance the adaptive sample to use WindowSizeClass and include screenshots/preview configurations.
-
-Tell me which of the above you'd like implemented and I'll add the code changes and tests.
-
