@@ -1,9 +1,8 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("kotlin-kapt")
+ //   id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
 }
 
@@ -57,7 +56,9 @@ dependencies {
     implementation(libs.dagger)
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
-    kapt(libs.daggerCompiler)
+    //implementation(libs.hilt)
+    implementation(libs.androidx.biometric)
+    annotationProcessor(libs.daggerCompiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
